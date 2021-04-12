@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <Spinner
+        android:id="@+id/profession_list_category_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dip"
+        android:entries="@array/profession_category_array"
+        android:prompt="@string/select_profession_category" />
+
+    <Spinner
+        android:id="@+id/profession_list_country_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profession_list_category_spinner"
+        android:layout_marginBottom="20dip"
+        android:entries="@array/countries_array"
+        android:prompt="@string/select_country" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profession_list_category_spinner"
+        android:layout_marginBottom="20dip"
+        android:text="@string/search" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/search"
+        android:background="#808080" />
+
+    <ListView
+        android:id="@+id/professional_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#FFFFFF"
+        android:textSize="16dip">
+    </ListView>
+
+</RelativeLayout>

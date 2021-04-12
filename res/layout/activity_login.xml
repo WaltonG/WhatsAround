@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dip"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:id="@+id/connect_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:padding="10dip"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:id="@+id/select_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/connect_text"
+        android:text="@string/select_account"
+        android:textColor="#ffffff"
+        android:layout_margin="5dip"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/select_text"
+        android:background="#808080" />
+
+    <ListView
+        android:id="@+id/select_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#FFFFFF"
+        android:textSize="16dip" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@id/select_account"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.95dp"
+            android:layout_weight="1"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/add_account"
+            android:text="@string/add_account"
+            android:layout_marginTop="1.95dp"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
+

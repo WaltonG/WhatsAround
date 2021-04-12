@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/upload_prof_pic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/profile_Pic_imageButton"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/upload_prof_pic"
+           android:textColor="#372c24"
+            android:textSize="16dip" />
+
+        <!-- Registration Form -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upload_prof_pic_text"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fName"
+                android:textColor="#372c24" />
+
+            <!-- Email Label -->
+
+            <EditText
+                android:id="@+id/fName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lName"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/lName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+            <Spinner
+                android:id="@+id/country_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:entries="@array/countries_array"
+                android:prompt="@string/select_country" />
+
+            <Spinner
+                android:id="@+id/profession_category_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:entries="@array/profession_category_array"
+                android:prompt="@string/select_profession_category" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profession_title"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/profession_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:ems="10"
+                android:inputType="phone"
+                android:singleLine="true" >
+
+            </EditText>
+            
+            <ImageButton
+                android:id="@+id/profession_location_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_mapmode" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_of_profession"
+                android:textColor="#372c24" />
+            
+             <Button
+                 android:id="@+id/register"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dip"
+                 android:text="@string/register" />
+
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/profile_Pic_imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="18dp"
+            android:src="@android:drawable/ic_menu_gallery" />
+    </RelativeLayout>
+
+</ScrollView>
